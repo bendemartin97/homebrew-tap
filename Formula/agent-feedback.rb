@@ -1,8 +1,8 @@
 class AgentFeedback < Formula
   desc "Menu bar app for visual screenshot feedback to Claude Code sessions"
   homepage "https://github.com/bendemartin97/agent-feedback"
-  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "c396bb9a3f60e268dda31a8da8d2a8d603d3b3ac186cc7aa5ac014a71deac2ec"
+  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "aadc837b590788e5ac7069c10628a3207ef5ab16e7569ff895d981f7d543c959"
   license "MIT"
   head "https://github.com/bendemartin97/agent-feedback.git", branch: "main"
 
@@ -28,6 +28,8 @@ class AgentFeedback < Formula
         agent-feedback setup --hooks
       For Codex as well (then trust the hooks once with /hooks in Codex):
         agent-feedback setup --hooks --codex
+      For pi (then restart running pi sessions or /reload):
+        agent-feedback setup --pi
       macOS asks for Screen Recording permission on the first capture.
     EOS
   end
