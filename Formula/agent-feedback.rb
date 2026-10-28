@@ -1,8 +1,8 @@
 class AgentFeedback < Formula
   desc "Menu bar app for visual screenshot feedback to Claude Code sessions"
   homepage "https://github.com/bendemartin97/agent-feedback"
-  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "3204e91bce7660e309d41a8b90f5dcbfd510d52bc3b84db16eb88b4fe57348b7"
+  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "b989f7b08f2fb8128a871803a774d08f7fd6680f78ca0868150e4422ee1a8f25"
   license "MIT"
   head "https://github.com/bendemartin97/agent-feedback.git", branch: "main"
 
@@ -26,6 +26,8 @@ class AgentFeedback < Formula
         brew services start agent-feedback
       Link hooks and skill into ~/.claude (--hooks also adds the hooks to settings.json):
         agent-feedback setup --hooks
+      For Codex as well (then trust the hooks once with /hooks in Codex):
+        agent-feedback setup --hooks --codex
       macOS asks for Screen Recording permission on the first capture.
     EOS
   end
