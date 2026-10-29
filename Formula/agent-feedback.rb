@@ -1,8 +1,8 @@
 class AgentFeedback < Formula
   desc "Menu bar app for visual screenshot feedback to Claude Code sessions"
   homepage "https://github.com/bendemartin97/agent-feedback"
-  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.7.3.tar.gz"
-  sha256 "fc174093ebf23918305aacde537d60b94a40578bceb45a839fd6058ea70d992a"
+  url "https://github.com/bendemartin97/agent-feedback/archive/refs/tags/v0.7.4.tar.gz"
+  sha256 "094b4685bfaafd88fcd7a059aa5d911b0e908efd8c8f856b2d177c74cfdcff83"
   license "MIT"
   head "https://github.com/bendemartin97/agent-feedback.git", branch: "main"
 
